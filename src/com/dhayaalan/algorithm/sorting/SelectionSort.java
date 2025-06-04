@@ -1,8 +1,13 @@
-package algorithm.sorting;
+package com.dhayaalan.algorithm.sorting;
 
 import java.util.Arrays;
 
 public class SelectionSort {
+
+    public static void main(String[] arg) {
+        int[] arr = {10, 22, 33, 15, 20, 30};
+        System.out.println(Arrays.toString(selectionSort(arr)));
+    }
 
     static int[] selectionSort(int[] arr) {
         int minIndex = 0;
@@ -23,10 +28,5 @@ public class SelectionSort {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-    }
-
-    public static void main(String[] arg) {
-        int[] arr = {10, 22, 33, 15, 20, 30};
-        System.out.println(Arrays.toString(selectionSort(arr)));
     }
 }

@@ -1,6 +1,19 @@
-package com.dhayaalan.algorithm;
+package com.dhayaalan.algorithm.search;
 
 public class BinarySearchProblem {
+
+    public static void main(String[] arg) {
+
+
+        //count 1s using binary search algorithm
+        int[] arr = {1, 1, 1, 1, 1, 0, 0, 0, 0};
+        System.out.println("Count One's: " + countOnes(arr));
+
+        //FlourSquare
+        int n = 11;
+        System.out.println("Flour Square Root: " + flourSquareRoot(n));
+
+    }
 
     static int countOnes(int[] arr) {
         int low = 0, high = arr.length - 1, lastOneIndex = -1;
@@ -16,7 +29,7 @@ public class BinarySearchProblem {
         return lastOneIndex + 1;
     }
 
-    static int flourSquareRoot(int n){
+    static int flourSquareRoot(int n) {
         if (n == 0 || n == 1) return n;
 
         int low = 1, high = n, ans = 0;
@@ -33,19 +46,5 @@ public class BinarySearchProblem {
         }
 
         return ans;
-    }
-
-
-    public static void main(String[] arg) {
-
-
-        //count 1s using binary search algorithm
-        int[] arr = {1, 1, 1, 1, 1, 0, 0, 0, 0};
-        System.out.println("Count One's: " + countOnes(arr));
-
-        //FlourSquare
-        int n = 11;
-        System.out.println("Flour Square Root: "+ flourSquareRoot(n));
-
     }
 }

@@ -1,6 +1,7 @@
-package com.dhayaalan.linkedList;
+package com.dhayaalan.dataStructure.linkedList;
 
 public class LinkedListMain {
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.insertAtFirst(2);

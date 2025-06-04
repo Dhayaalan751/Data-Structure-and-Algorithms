@@ -1,8 +1,13 @@
-package algorithm.sorting;
+package com.dhayaalan.algorithm.sorting;
 
 import java.util.Arrays;
 
 public class BubbleSort {
+
+    public static void main(String[] arg) {
+        int[] arr = {10, 20, 30, 50, 13, 20};
+        System.out.print(Arrays.toString(bubbleSort(arr)));
+    }
 
     static int[] bubbleSort(int[] arr) {
         int size = arr.length - 1;
@@ -24,10 +29,5 @@ public class BubbleSort {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-    }
-
-    public static void main(String[] arg) {
-        int[] arr = {10, 20, 30, 50, 13, 20};
-        System.out.print(Arrays.toString(bubbleSort(arr)));
     }
 }

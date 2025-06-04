@@ -1,4 +1,4 @@
-package design.strategyPattern;
+package com.dhayaalan.design.strategyPattern;
 
 public class MiniDuckSimulator {
     public static void main(String[] args) {

@@ -1,9 +1,14 @@
-package com.dhayaalan.algorithm;
+package com.dhayaalan.algorithm.search;
 
 
 public class BoyerMooreMajorityElement {
 
-    static int majorityElement(int[] arr){
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 3, 1, 1, 4, 2, 1};
+        System.out.println("Majority Element: " + majorityElement(arr));
+    }
+
+    static int majorityElement(int[] arr) {
         int count = 0, candidate = -1;
 
         // Phase 1: Find a candidate
@@ -27,10 +32,5 @@ public class BoyerMooreMajorityElement {
         }
 
         return (count > arr.length / 2) ? candidate : -1;
-    }
-
-    public static void main(String[] args) {
-        int[] arr = {1,1,2,3,1,1,4,2,1};
-        System.out.println("Majority Element: " + majorityElement(arr));
     }
 }

@@ -1,4 +1,4 @@
-package com.dhayaalan.linkedList;
+package com.dhayaalan.dataStructure.linkedList;
 
 public class LinkedList {
 
