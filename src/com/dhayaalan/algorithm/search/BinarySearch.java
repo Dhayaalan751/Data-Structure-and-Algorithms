@@ -15,7 +15,7 @@ public class BinarySearch {
 
         while (low <= high) {
 
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
             System.out.println(mid);
             if (arr[mid] == k) {
                 return true;
