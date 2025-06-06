@@ -1,4 +1,4 @@
-package com.dhayaalan.algorithm.search;
+package com.dhayaalan.algorithm.search.binarySearch;
 
 public class BinarySearch {
 
