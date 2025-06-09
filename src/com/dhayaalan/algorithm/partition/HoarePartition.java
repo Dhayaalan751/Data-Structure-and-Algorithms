@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class HoarePartition {
 
     public static void main(String[] arg){
-        int[] arr = {100,50,80,10,40,20,30,111};
-        int pivotValue = 100;
+        int[] arr = {9,12,5,10,14,3,10};
+        int pivotValue = 10;
         System.out.println(Arrays.toString(hoarePartition(arr,pivotValue)));
     }
 
